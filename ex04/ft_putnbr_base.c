@@ -6,7 +6,7 @@
 /*   By: aantonio <aantonio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 16:51:40 by aantonio          #+#    #+#             */
-/*   Updated: 2022/08/15 19:13:06 by aantonio         ###   ########.fr       */
+/*   Updated: 2022/08/15 19:32:41 by aantonio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,12 +69,12 @@ int	is_valid_base(char *base)
 }
 
 
-void	get_digit_count(int number, char *base)
+void	write_number_in_base(int number, char *base)
 {
 	int	digit_count;
 	int	index;
 	int	length_new_base;
-	int copy_number;
+	int	copy_number;
 
 	copy_number = number;
 	length_new_base = ft_strlen(base);
@@ -109,6 +109,6 @@ void	ft_putnbr_base(int nbr, char *base)
 		else
 			nbr = nbr * -1;
 	}
-	get_digit_count(nbr, base);
+	write_number_in_base(nbr, base);
 }
 
