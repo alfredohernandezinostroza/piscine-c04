@@ -6,7 +6,7 @@
 /*   By: aantonio <aantonio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 19:33:15 by aantonio          #+#    #+#             */
-/*   Updated: 2022/08/19 17:26:11 by aantonio         ###   ########.fr       */
+/*   Updated: 2022/08/19 17:38:04 by aantonio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ int	get_number(char *start, int size, char *base)
 	return (number);
 }
 
-
 int	is_valid_base(char *base)
 {
 	int	base_size;
@@ -85,7 +84,7 @@ int	is_valid_base(char *base)
 		{
 			if (base[i] == base[j] || base[j] == '+' || base[j] == '-')
 				return (0);
-			if ( base[j] < 32)
+			if ( base[j] <= ' ')
 				return (0);
 			j++;
 		}
