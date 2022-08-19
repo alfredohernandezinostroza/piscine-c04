@@ -6,7 +6,7 @@
 /*   By: aantonio <aantonio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 19:33:15 by aantonio          #+#    #+#             */
-/*   Updated: 2022/08/19 17:20:57 by aantonio         ###   ########.fr       */
+/*   Updated: 2022/08/19 17:26:11 by aantonio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ int	is_valid_base(char *base)
 		{
 			if (base[i] == base[j] || base[j] == '+' || base[j] == '-')
 				return (0);
-			if ( base[j] <= 40)
+			if ( base[j] < 32)
 				return (0);
 			j++;
 		}
